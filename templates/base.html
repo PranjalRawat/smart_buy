@@ -1,0 +1,35 @@
+{% load static %}
+<!Doctype html>
+<html lang="en" dir="ltr">
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+			
+			<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+
+			<link rel="stylesheet" href="{% static 'compare/css/index.css' %}"/>
+
+			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+			<title>lol</title>
+
+			<script type="text/javascript" src="{% static 'compare/js/base.js' %}"></script>
+	</head>
+	<body>
+		<div id="mySidenav" class="sidenav">
+		  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		  <a href="home.html">Home</a>
+		  <a href="About.html">About</a>
+		  <a href="contact.html">Contact</a>
+
+		</div>
+
+		<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+
+
+		{% block content %}
+
+		{% endblock %}
+
+	</body>
+</html>

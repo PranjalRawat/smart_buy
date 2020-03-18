@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+	<div class="w3-tangerine" >
+	  <center>Smart buy</center>
+	</div>
+	<center> <img src="{% static 'compare/images/logo.png' %}"/ ></center>
+
+	<form class="example" action="search.html" >
+	  <div class="active-pink-3 active-pink-4 mb-4"> 
+	  <center><input type="text" name="search" placeholder="Plz enter name of the product...">
+	  </center>
+	  </div>
+	</form>
+
+	<br>
+	<br>
+
+	<center class= 'p_text'>Smart_buy.com compare prices online of Online Stores "Price it"
+	        smart_but compares prices across ecommerce sites and presents 
+	        the prices to you for your convenience.
+	</center>
+
+
+	<center>Available Online stores are amazon, flipkart, snapdeal, mintra and shopcules.</center> 
+	<center>Don't Be satisfied with the price you saw, It could be cheaper 😉</center>
+	</div>
+
+	<!-- The social media icon bar -->
+	<div class="icon-bar">
+	  <a href="https://www.facebook.com" class="facebook"><i class="fa fa-facebook"></i></a>
+	  <a href="https://www.twitter.com" class="twitter"><i class="fa fa-twitter"></i></a>
+	  <a href="https://www.google.com" class="google"><i class="fa fa-google"></i></a>
+	  <a href="https://www.linkedin.com" class="linkedin"><i class="fa fa-linkedin"></i></a>
+	  <a href="https://www.youtube.com" class="youtube"><i class="fa fa-youtube"></i></a>
+	</div>
+
+	
+
+{% endblock %}
